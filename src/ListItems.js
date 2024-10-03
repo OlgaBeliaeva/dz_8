@@ -10,9 +10,13 @@ const ListItems = () => {
     }
   };
 
+  // useEffect(() => {
+  //   console.log('Компонент ListItems обновлен');
+  // }, [items]);
+
   useEffect(() => {
     console.log('Компонент ListItems обновлен');
-  }, [items]);
+  }, [items]); // Теперь компонент не будет перерисовываться при каждом изменении массива items
 
   return (
     <div>
